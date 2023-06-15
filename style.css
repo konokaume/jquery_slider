@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+#wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background: rgb(226, 132, 0);
+  color: #FFF;
+  padding: 20px;
+}
+
+.main-menu {
+  background: rgb(255, 222, 89);
+}
+
+.main-menu ul li {
+  text-align: center;
+}
+
+.main-menu ul li a {
+  color: rgb(88, 51, 0);
+  display: block;
+  padding: 10px 20px;
+}
+
+.main-menu ul li a:hover {
+  background: rgb(88, 51, 0);
+  color: rgb(255, 222, 89);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+section {
+  background: rgb(255, 238, 172);
+  flex: 3;
+  padding: 20px;
+}
+
+article {
+  background: #FFF;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+aside {
+  background: rgb(255, 216, 62);
+  flex: 1;
+}
+
+.sub-menu {
+  background: rgb(255, 216, 62);
+}
+
+.sub-menu ul li {
+  text-align: center;
+}
+
+.sub-menu ul li a {
+  color:  rgb(88, 51, 0);
+  display: block;
+  padding: 10px 20px;
+}
+
+.sub-menu ul li a:hover {
+  background: rgb(255, 204, 0);
+  color: #FFF;
+}
+
+footer {
+  background: rgb(88, 51, 0);
+  color: #FFF;
+  padding: 20px;
+  text-align: center;
+}
+
+/*タブレット用   600px以上〜*/
+@media all and (min-width: 600px) {
+
+  .main-menu ul {
+    display: flex;
+  }
+
+  .main-menu ul li {
+    text-align: left;
+  }
+
+  main {
+    display: flex;
+  }
+
+  .sub-menu ul li {
+    text-align: left;
+  }
+
+}
+
+/*コンピュータ用   1025px以上〜*/
+@media all and (min-width: 1025px) {
+
+  #wrap {
+    width: 84%;
+    max-width: 1280px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+}
